@@ -1,0 +1,158 @@
+/* Fondo general de la sección */
+.projects {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Título de la sección */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Estilo para las tarjetas de proyectos */
+.projectCard {
+  background: #fff;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido del proyecto */
+.projectContent {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* Detalles del proyecto */
+.projectDetails {
+  padding: 2rem;
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.projectRole,
+.projectCompany {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+.colorRole {
+  color: #9c27b0;
+}
+.projectDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor para el tech stack y botón */
+.techContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea al lado derecho */
+  gap: 1rem;
+  margin-top: auto; /* Empuja hacia abajo en el contenedor */
+}
+
+/* Ajustes del stack tecnológico */
+.techStack {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.techStack svg {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.techStack svg:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* Botón destacado */
+.ctaButton {
+  background: linear-gradient(135deg, #ff4081, #9c27b0);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.4);
+}
+
+/* Imagen del proyecto */
+.projectImage {
+  flex: 1;
+  background: linear-gradient(120deg, #a7a7a7, #fcfcfc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projectImage img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .projectContent {
+    flex-direction: column;
+  }
+
+  .projectDetails {
+    padding: 1.5rem;
+  }
+
+  .techContent {
+    align-items: flex-end; /* Sigue alineado a la derecha */
+  }
+
+  .techStack svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ctaButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,180 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  width: 100%;
+  padding-left: 190px;
+  padding-right: 190px;
+  animation: container-animation linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+  z-index: 1000;
+}
+.navBlog {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+@keyframes container-animation {
+  to {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0;
+  }
+}
+.container {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 60px;
+  border-radius: 20px;
+  box-shadow: #333333 0px 0px 15px;
+  animation: navbar-animation linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+}
+.containerBlog {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@keyframes navbar-animation {
+  to {
+    border-radius: 0;
+    padding: 0, 20px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+}
+.logo svg {
+  width: 70px;
+  height: 70px;
+}
+.logo svg:hover {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem; /* Espaciado uniforme entre enlaces */
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555555; /* Color gris oscuro */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.links a:hover,
+.links a:focus {
+  color: #0070f3; /* Azul vibrante para hover */
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none; /* Oculto en pantallas grandes */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger:focus {
+  outline: 2px solid #0070f3; /* Accesibilidad */
+}
+.button {
+  background: linear-gradient(135deg, #ff4081, #9c27b0);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.4);
+}
+.button:hover,
+.button:focus {
+  background-color: #0070f3;
+  border-color: #0070f3;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .container {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: 0;
+    animation: nav-mobil linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+  }
+  @keyframes nav-mobil {
+    to {
+      display: flex;
+      background: #ffffff;
+      border-radius: 0;
+      box-shadow: #333333 0px 0px 15px;
+    }
+  }
+  .links {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 1000;
+  }
+
+  .links.show {
+    display: flex; /* Mostrar enlaces cuando esté activo */
+  }
+
+  .hamburger {
+    display: block; /* Mostrar menú hamburguesa */
+  }
+}

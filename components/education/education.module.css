@@ -1,0 +1,201 @@
+.education {
+  background-color: #52a3ff;
+  padding: 5rem 0 5rem;
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 11.11%,
+    2% 11.01%,
+    4% 10.7%,
+    6% 10.21%,
+    8% 9.56%,
+    10% 8.79%,
+    12% 7.95%,
+    14% 7.07%,
+    16% 6.22%,
+    18% 5.43%,
+    20% 4.76%,
+    22% 4.25%,
+    24% 3.91%,
+    26% 3.77%,
+    28% 3.84%,
+    30% 4.12%,
+    32% 4.58%,
+    34% 5.21%,
+    36% 5.96%,
+    38% 6.8%,
+    40% 7.67%,
+    42% 8.53%,
+    44% 9.33%,
+    46% 10.02%,
+    48% 10.56%,
+    50% 10.93%,
+    52% 11.1%,
+    54% 11.06%,
+    56% 10.82%,
+    58% 10.38%,
+    60% 9.78%,
+    62% 9.04%,
+    64% 8.22%,
+    66% 7.35%,
+    68% 6.48%,
+    70% 5.67%,
+    72% 4.96%,
+    74% 4.39%,
+    76% 3.99%,
+    78% 3.79%,
+    80% 3.8%,
+    82% 4.01%,
+    84% 4.42%,
+    86% 5%,
+    88% 5.71%,
+    90% 6.53%,
+    92% 7.39%,
+    94% 8.26%,
+    96% 9.09%,
+    98% 9.82%,
+    100% 10.41%
+  );
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.educationList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.educationEntry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.timeline {
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(135deg, #ff4081, #9c27b0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.content {
+  padding-left: 1.5rem;
+  border-left: 2px dashed #ddd;
+}
+
+.degree {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #f4f4f4;
+}
+
+.year {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f3f3f3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    clip-path: polygon(
+      100% 100%,
+      0% 100%,
+      0% 8.66%,
+      2% 8.6%,
+      4% 8.43%,
+      6% 8.17%,
+      8% 7.82%,
+      10% 7.4%,
+      12% 6.95%,
+      14% 6.47%,
+      16% 6.01%,
+      18% 5.59%,
+      20% 5.23%,
+      22% 4.95%,
+      24% 4.76%,
+      26% 4.69%,
+      28% 4.73%,
+      30% 4.88%,
+      32% 5.13%,
+      34% 5.47%,
+      36% 5.87%,
+      38% 6.33%,
+      40% 6.8%,
+      42% 7.26%,
+      44% 7.69%,
+      46% 8.07%,
+      48% 8.36%,
+      50% 8.56%,
+      52% 8.65%,
+      54% 8.63%,
+      56% 8.5%,
+      58% 8.26%,
+      60% 7.94%,
+      62% 7.54%,
+      64% 7.09%,
+      66% 6.62%,
+      68% 6.16%,
+      70% 5.72%,
+      72% 5.33%,
+      74% 5.02%,
+      76% 4.81%,
+      78% 4.7%,
+      80% 4.7%,
+      82% 4.82%,
+      84% 5.04%,
+      86% 5.35%,
+      88% 5.74%,
+      90% 6.18%,
+      92% 6.65%,
+      94% 7.12%,
+      96% 7.56%,
+      98% 7.96%,
+      100% 8.28%
+    );
+  }
+  .educationList {
+    padding-left: 2rem;
+  }
+
+  .timeline {
+    width: 6px;
+  }
+
+  .content {
+    padding-left: 1rem;
+  }
+
+  .degree {
+    font-size: 1.3rem;
+  }
+
+  .institution {
+    font-size: 1rem;
+  }
+}
