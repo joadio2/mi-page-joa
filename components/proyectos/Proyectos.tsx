@@ -7,7 +7,7 @@ import Mongo from "@/utils/mongo.svg";
 import Sql from "@/utils/sql.svg";
 import Go from "@/utils/go.svg";
 import VenserLogo from "@/utils/androiico.png";
-
+import Image from "next/image";
 export default function Projects() {
   return (
     <section className={styles.projects}>
@@ -16,7 +16,7 @@ export default function Projects() {
       <div className={styles.projectCard}>
         <div className={styles.projectContent}>
           <div className={styles.projectImage}>
-            <img src={VenserLogo.src} alt="Venser Logo" />
+            <Image src={VenserLogo.src} alt="Venser Logo" />
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.projectTitle}>
@@ -53,7 +53,7 @@ export default function Projects() {
       <div className={styles.projectCard}>
         <div className={styles.projectContent}>
           <div className={styles.projectImage}>
-            <img src={VenserLogo.src} alt="Venser Logo" />
+            <Image src={VenserLogo.src} alt="Venser Logo" />
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.projectTitle}>

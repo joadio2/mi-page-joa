@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./blog.module.css";
 import BuyCoffe from "@/utils/coffee.svg";
 import In from "@/utils/linkedin.svg";
@@ -102,7 +103,14 @@ const Blog: React.FC = () => {
                   {section.hasImage && (
                     <>
                       <div className={styles.topImg}></div>
-                      <img src={section.image} alt={section.title} />
+                      {section.image ? (
+                        <Image
+                          src={section.image}
+                          alt={section.title || "Default alt"}
+                        />
+                      ) : (
+                        <p>No image available</p>
+                      )}
                       <div className={styles.btnImg}></div>
                     </>
                   )}
