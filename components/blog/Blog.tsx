@@ -80,7 +80,7 @@ const sections: Section[] = [
   },
 ];
 
-const Blog: React.FC = () => {
+export default function Blog() {
   return (
     <div className={styles.blog}>
       <header className={styles.header}>
@@ -161,6 +161,4 @@ const Blog: React.FC = () => {
       </aside>
     </div>
   );
-};
-
-export default Blog;
+}

@@ -74,7 +74,7 @@ const sections: Section[] = [
     hasImage: false,
   },
 ];
-const Blog2: React.FC = () => {
+export default function Blog2() {
   return (
     <div className={styles.blog}>
       <header className={styles.header}>
@@ -157,6 +157,4 @@ const Blog2: React.FC = () => {
       </aside>
     </div>
   );
-};
-
-export default Blog2;
+}
