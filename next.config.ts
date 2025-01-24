@@ -1,19 +1,11 @@
 import type { NextConfig } from "next";
-
+import type { Configuration } from "webpack";
 const nextConfig = {
-  webpack(config) {
-    config.module.rules.push({
+  webpack(config: Configuration) {
+    config.module?.rules?.push({
       test: /\.svg$/,
-      use: [
-        {
-          loader: "@svgr/webpack",
-          options: {
-            icon: true,
-          },
-        },
-      ],
+      use: ["@svgr/webpack"],
     });
-
     return config;
   },
 };
